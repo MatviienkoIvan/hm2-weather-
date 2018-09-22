@@ -1,20 +1,45 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<h1>Hot Weather Widget</h1>
+<div class="element">
+	<app-hotels 
+		[currentHotel]="currentHotel" 
+		[hotels]="hotels" 
+		(hotel)="selectHotel($event)">
+	</app-hotels>		
+		<div class="element-right">
+			<app-weather
+				[weather]="currentHotel.weather">
+			</app-weather>
+			<app-profile 
+				[profile]="currentHotel.profile">
+			</app-profile>
+		</div>
+	  <div class="clear"> </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!---728x90--->
+<script src='https://publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
+<div style='margin: 0 auto;text-align: center;margin-top: 5px;'><script>
+var allowedNumberOfEboundDynamicAdds = 4;
+var sizesEboundDynamicAdsDesktop = ['728x90'];
+var sizesEboundDynamicAdsTablet = ['728x90'];
+var sizesEboundDynamicAdsMobile = ['320x100'];
+eboundAdsTagByDevice(sizesEboundDynamicAdsDesktop,sizesEboundDynamicAdsTablet,sizesEboundDynamicAdsMobile, 'ebound_header_tag');
+
+if(typeof user_tag_config == 'undefined'){
+	var user_tag_config = {};
+}
+user_tag_config['ebound_header_tag'] = {};
+user_tag_config['ebound_header_tag']['desktop'] = {};
+user_tag_config['ebound_header_tag']['desktop']['cpm'] = '';
+user_tag_config['ebound_header_tag']['desktop']['adsCode'] = '';
+user_tag_config['ebound_header_tag']['tablet'] = {};
+user_tag_config['ebound_header_tag']['tablet']['cpm'] = '';
+user_tag_config['ebound_header_tag']['tablet']['adsCode'] = '';
+user_tag_config['ebound_header_tag']['mobile'] = {};
+user_tag_config['ebound_header_tag']['mobile']['cpm'] = '';
+user_tag_config['ebound_header_tag']['mobile']['adsCode'] = '';
+</script></div>
+<div class="copy-right">
+			<p>© 2015 Hot Weather Widget. All rights reserved | Design by  <a href="http://w3layouts.com/" target="_blank">  W3layouts </a></p>
+</div>
 

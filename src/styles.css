@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+.active-hotel {
+    background:	#faefef;
+  }
+  .ele-strip ul li a{
+    cursor: pointer;
+  }
+  .active-link {
+    background: #FFB6C1
+  }
+  .ele-strip ul li:last-child{
+    border-right: none;
+  }
+  
